@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+.zee-index {
+  z-index: 1000;
+  position: fixed;
+}
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.ron {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+:root {
+  --custom-property: 0 40px 80px -20px rgba(0, 0, 0, 0.8); /* Larger shadow than shadow-2xl */
+}
