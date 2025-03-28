@@ -18,11 +18,11 @@ const Contact = () => {
       <div className="mt-30 relative">
         <img src={i1} alt="" />
         <GoBackButtonWhite className="absolute" />
-        <h1 className="absolute text-white top-18 left-[43.7%] text-4xl font-bold">
+        <h1 className="absolute text-white top-18 left-[44.7%] text-4xl font-bold">
           Contact Us
         </h1>
         <p className="absolute flex text-white top-29 left-[47%]">
-          Home <IoChevronForwardSharp className="mt-1" /> About
+          Home <IoChevronForwardSharp className="mt-1" /> Contact
         </p>
       </div>
       {/* cards */}

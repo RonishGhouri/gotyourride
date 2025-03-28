@@ -7,6 +7,10 @@
   position: fixed;
 }
 
+.ze-index {
+  z-index: 50;
+}
+
 .montserrat-title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

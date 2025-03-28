@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Core Swiper styles
 import "swiper/css/navigation"; // Navigation styles
 import "swiper/css/pagination"; // Pagination styles
-import ReactPlayer from "react-player";
-import Modal from "react-modal";
+
 import Star from "./Star";
 import { NavLink } from "react-router-dom";
-
 import image from "../assets/image.png";
+import video from "../assets/video.mp4";
+
 import image1 from "../assets/unsplash.png";
 import i1 from "../assets/destination-icon-01-1.png";
 import i2 from "../assets/suitcase-packages-01-1.png";
@@ -20,7 +20,6 @@ import i5 from "../assets/fuji-mountain-image-1.png";
 import i6 from "../assets/Group-286.png";
 import i7 from "../assets/clock-icon-01.png";
 import i8 from "../assets/user-icon-01.png";
-import i9 from "../assets/Group-108.png";
 import i10 from "../assets/solution-bulb-concept-svgrepo-com-1.png";
 
 import image2 from "../assets/image-1.png";
@@ -41,7 +40,6 @@ import image17 from "../assets/nick-night-6ckbKRjydSw-unsplash.png";
 import image18 from "../assets/SVGRepo_iconCarrier_1.png";
 import image19 from "../assets/SVGRepo_iconCarrier_2.png";
 import image20 from "../assets/SVGRepo_iconCarrier_3.png";
-import video from "../assets/video.mp4";
 import image21 from "../assets/image-21.png";
 import image22 from "../assets/image-22.png";
 import image23 from "../assets/image-23.png";
@@ -53,33 +51,11 @@ import image28 from "../assets/image_5.png";
 import image29 from "../assets/image_6.png";
 
 import { CiHeart } from "react-icons/ci";
-// Set the app element for accessibility (modal component)
-Modal.setAppElement("#root");
+import VideoPlayer from "./VideoPlayer";
 
 const Popup = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false); // Modal open state
-
-  const handlePlay = () => {
-    setModalIsOpen(true); // Open the modal
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false); // Close the modal
-  };
-
   // Effect to disable/enable body scroll when modal is opened/closed
-  useEffect(() => {
-    if (modalIsOpen) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    } else {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    }
 
-    // Clean up the effect when the component is unmounted
-    return () => {
-      document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled
-    };
-  }, [modalIsOpen]);
   return (
     <div>
       <div className="bg-white ron top-[670px] mx-auto  pl-18 pr-4  w-4/5 h-6/12 border border-white flex absolute inset-0 items-center justify-between shadow-2xl">
@@ -633,50 +609,7 @@ const Popup = () => {
       <div className="text-center mt-30 mb-10">
         <h1 className="font-bold text-4xl">View Famous Site</h1>
       </div>
-      <div className="relative">
-        <img src={image} className="w-4/5 mx-auto rounded-2xl mt-25" alt="" />
-        <img
-          src={i9}
-          onClick={handlePlay}
-          className="absolute inset-0 mx-auto top-72 w-25"
-          alt=""
-        />
-
-        {/* React Modal for video */}
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          style={{
-            overlay: {
-              backgroundColor: "rgba(0, 0, 0, 0.7)",
-              zIndex: 2000, // Set higher z-index to ensure it appears above Swiper.js
-            },
-            content: {
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "80%",
-              height: "80%",
-              padding: 0,
-              border: "none",
-              background: "black",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            },
-          }}
-        >
-          <div className="relative w-full h-full">
-            <ReactPlayer
-              url={video} // Video URL
-              playing={true}
-              controls={true}
-              width="100%"
-              height="100%"
-            />
-          </div>
-        </Modal>
-      </div>
+      <VideoPlayer image={image} video={video} />
       {/* ///////// */}
       {/* next part */}
       {/* ///////// */}
