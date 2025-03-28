@@ -63,19 +63,19 @@ const About = () => {
           <div className="flex border border-black/20 h-47 w-1/2 gap-20 p-3 rounded-xl relative">
             <div className="text-center w-[45%]">
               <img src={i3} className="w-13 mt-2 mx-auto" alt="" />
-              <p className="font-semibold  mt-2">
+              <p className="font-semibold w-4/5 mx-auto mt-2">
                 Nationally wel known service provider
               </p>
-              <p className="text-sm">
+              <p className="text-sm w-5/6 mx-auto">
                 Welcome to our tourism ecosystem, we are here for you
               </p>
             </div>
             <div className="text-center w-[45%]">
               <img src={i2} className="w-13 mx-auto" alt="" />
-              <p className="font-semibold ">
+              <p className="font-semibold w-4/5 mx-auto">
                 Most popular booking solution provider
               </p>
-              <p className="text-sm">
+              <p className="text-sm w-5/6 mx-auto">
                 Welcome to our tourism ecosystem, we are here for you
               </p>
             </div>

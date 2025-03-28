@@ -53,10 +53,10 @@ const Hero = ({ children: slides }) => {
           Golden Glow, Creating A Serene And Breathtaking View.
         </p>
         <div className="flex mt-20 gap-5">
-          <NavLink className="bg-[#F1582B] px-6 py-2 rounded-full text-white">
+          <NavLink className="bg-[#F1582B] px-6 py-2 rounded-full text-white border border-[#f1582b] hover:border-[#f1582b] hover:text-[#f1582b] hover:bg-white">
             <h1>BOOK NOW</h1>
           </NavLink>
-          <NavLink className="border px-6 py-2 rounded-full text-white">
+          <NavLink className="border px-6 py-2 rounded-full text-white hover:text-[#f1582b] hover:bg-white">
             <h1>MORE INFO</h1>
           </NavLink>
         </div>
