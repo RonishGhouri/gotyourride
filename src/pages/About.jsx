@@ -18,6 +18,8 @@ import "swiper/css"; // Core Swiper styles
 import "swiper/css/navigation"; // Navigation styles
 import "swiper/css/pagination"; // Pagination styles
 
+import { TiCameraOutline } from "react-icons/ti";
+
 const About = () => {
   return (
     <>
@@ -97,23 +99,41 @@ const About = () => {
           slidesPerView={4} // Number of slides visible at once
           pagination={{ clickable: true }} // Enable pagination (dots)
         >
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i6} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i7} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i8} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i9} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i6} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="group relative">
             <img src={i7} className=" " alt="" />
+            <div className="bg-[#f1582b]/20 group-hover:block hidden transition-all duration-300 rounded-md top-0 ease-out absolute w-full h-full">
+              <TiCameraOutline className=" text-9xl mx-auto text-[#f1582b]  mt-[23%] " />
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
