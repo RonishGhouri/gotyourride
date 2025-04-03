@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Booking from "./pages/Booking";
 import NavbarNotForHome from "./components/NavbarNotForHome";
 import Footer from "./components/Footer";
+import PaymentPage from "./pages/PaymentPage";
 const App = () => {
   const location = useLocation();
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/payment" element={<PaymentPage />} />
       </Routes>
       <Footer />
     </div>

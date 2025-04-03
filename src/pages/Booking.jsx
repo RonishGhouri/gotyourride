@@ -46,7 +46,7 @@ const Booking = () => {
         <GoBackButton />
 
         {/*  */}
-        <div className="w-4/5 mx-auto mt-36 ">
+        <div className="w-4/5 mx-auto mt-5 ">
           {/* title*/}
           <div className="mb-5">
             <h1 className="font-bold mb-5 text-4xl">Mt. Fuji 5th Station</h1>
