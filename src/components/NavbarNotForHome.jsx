@@ -46,10 +46,13 @@ const NavbarNotForHome = () => {
               DESTINATIONS <IoCaretDownSharp size={20} />
             </h1>
             <div className="group-hover:block hidden absolute pt-2">
-              <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
-                <p className="cursor-pointer hover:text-black">ONE</p>
-                <p className="cursor-pointer hover:text-black">TWO</p>
-                <p className="cursor-pointer hover:text-black">THREE</p>
+              <div className="flex flex-col gap-2 w-50 py-3 px-5 bg-slate-100 text-gray-500 rounded">
+                <p className="cursor-pointer hover:text-black"> City Tokyo</p>
+                <p className="cursor-pointer hover:text-black">
+                  Mt. Fuji 5th Station
+                </p>
+                <p className="cursor-pointer hover:text-black">Hakone tour</p>
+                <p className="cursor-pointer hover:text-black">Osaka Castle</p>
               </div>
             </div>
           </NavLink>

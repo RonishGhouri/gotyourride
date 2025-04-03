@@ -18,15 +18,16 @@ const COUNTRIES = [
 ];
 const CODES = ["+81", "+33", "+49", "+34", "+1"];
 
-export function InputPhoneCountryCode() {
+export function InputPhoneCountryCode({ css, text }) {
   const [country, setCountry] = React.useState(0);
+  const defaultValue = css || "w-[1255px] ";
 
   return (
-    <div className="w-[1255px] ">
+    <div className={defaultValue}>
       <Typography
         variant="small"
-        color="blue-gray"
-        className="mb-1 font-medium"
+        color="text-black/20"
+        className={`mb-1 font-medium ${text ? "hidden" : ""}`}
       >
         Enter Phone Number
       </Typography>
