@@ -54,6 +54,7 @@ const NavbarNotForHome = () => {
                   <GrLocation className="text-2xl text-[#f1582b]" />
                   City Tokyo
                 </NavLink>
+                <hr className="opacity-20" />
                 <NavLink
                   to="/booking"
                   className="cursor-pointer hover:text-[#f1582b] flex gap-2"
@@ -61,6 +62,7 @@ const NavbarNotForHome = () => {
                   <GrLocation className="text-2xl text-[#f1582b]" />
                   Mt. Fuji 5th Station
                 </NavLink>
+                <hr className="opacity-20" />
                 <NavLink
                   to="/booking"
                   className="cursor-pointer hover:text-[#f1582b] flex gap-2"
@@ -68,6 +70,7 @@ const NavbarNotForHome = () => {
                   <GrLocation className="text-2xl text-[#f1582b]" />
                   Hakone tour
                 </NavLink>
+                <hr className="opacity-20" />
                 <NavLink
                   to="/booking"
                   className="cursor-pointer hover:text-[#f1582b] flex gap-2"
