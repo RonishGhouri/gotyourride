@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const Hero = ({ children: slides }) => {
@@ -13,6 +12,12 @@ const Hero = ({ children: slides }) => {
   // Next slide function
   const next = () =>
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+
+  useEffect(() => {
+    const interval = setInterval(next, 3000); // Auto-slide every 3 seconds
+
+    return () => clearInterval(interval); // Clean up the interval when the component unmounts
+  }, [curr]);
 
   return (
     <>
@@ -27,7 +32,7 @@ const Hero = ({ children: slides }) => {
             </div>
           ))}
         </div>
-        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-between p-6">

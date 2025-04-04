@@ -54,7 +54,7 @@ const Popup = () => {
 
   return (
     <div>
-      <HighIndexComponent/>
+      <HighIndexComponent />
       {/* ///////// */}
       {/* next part */}
       {/* ///////// */}
@@ -66,7 +66,7 @@ const Popup = () => {
           Got Your Guide
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-4/5 mx-auto gap-5">
         <div className=" rounded-2xl shadow-2xl hover:shadow-[var(--custom-property)]">
           {/* image 2*/}
           <div className="relative">
@@ -98,51 +98,14 @@ const Popup = () => {
             <p className="font-semibold text-xl ">
               Private Mountain Fuji Sightseeing Tour
             </p>
-            <p className="pl-4 py-2">Mt. Fuji 5th Station</p>
+            <p className="pl-4 py-2">City Tokyo</p>
             <p className="text-[11px]">
               From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
               <span className="text-[#FF0303] font-semibold">$500</span>
             </p>
           </div>
         </div>
-        <div className=" rounded-2xl shadow-2xl hover:shadow-[var(--custom-property)]">
-          {/* image 3*/}
-          <div className="relative">
-            <img src={image3} alt="" />
-            <div className="absolute inset-0 top-6 ">
-              <div className="flex justify-between items-center">
-                <div className="bg-[#F1582B] px-3 py-2 h-9 rounded-full ml-6 text-white cursor-pointer">
-                  Featured
-                </div>
-                <CiHeart
-                  size={30}
-                  className="bg-white text-[#F1582B] mr-6 rounded-full p-1 cursor-pointer hover:bg-[#F1582B] hover:text-white"
-                />
-              </div>
-            </div>
-          </div>
-          {/* text part */}
-          <div className="px-6 pb-6">
-            <div className="flex justify-between py-2 text-[11px] font-semibold">
-              <p className="flex gap-2">
-                <img src={i7} className="w-[13px] h-[13px] mt-[2px]" alt="" />
-                10 Hours
-              </p>
-              <p className="flex gap-2">
-                <img src={i8} className="w-[11px] h-[11px] mt-[2px]" alt="" />
-                1-6 Guest
-              </p>
-            </div>
-            <p className="font-semibold text-xl ">
-              Private Mountain Fuji Sightseeing Tour
-            </p>
-            <p className="pl-4 py-2">Chureito Pagoda</p>
-            <p className="text-[11px]">
-              From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
-              <span className="text-[#FF0303] font-semibold">$500</span>
-            </p>
-          </div>
-        </div>
+
         <div className=" rounded-2xl shadow-2xl hover:shadow-[var(--custom-property)]">
           {/* image 4*/}
           <div className="relative">
@@ -174,7 +137,7 @@ const Popup = () => {
             <p className="font-semibold text-xl ">
               Private Mountain Fuji Sightseeing Tour
             </p>
-            <p className="pl-4 py-2">Laka Kawagochiko </p>
+            <p className="pl-4 py-2">Mt. Fuji 5th Station</p>
             <p className="text-[11px]">
               From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
               <span className="text-[#FF0303] font-semibold">$500</span>
@@ -212,7 +175,7 @@ const Popup = () => {
             <p className="font-semibold text-xl ">
               Private Mountain Fuji Sightseeing Tour
             </p>
-            <p className="pl-4 py-2">Osaka Castle</p>
+            <p className="pl-4 py-2">Hakone tour</p>
             <p className="text-[11px]">
               From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
               <span className="text-[#FF0303] font-semibold">$500</span>
@@ -250,45 +213,7 @@ const Popup = () => {
             <p className="font-semibold text-xl ">
               Private Mountain Fuji Sightseeing Tour
             </p>
-            <p className="pl-4 py-2">Shiten noji Tample</p>
-            <p className="text-[11px]">
-              From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
-              <span className="text-[#FF0303] font-semibold">$500</span>
-            </p>
-          </div>
-        </div>
-        <div className=" rounded-2xl shadow-2xl hover:shadow-[var(--custom-property)]">
-          {/* image 7*/}
-          <div className="relative">
-            <img src={image7} alt="" />
-            <div className="absolute inset-0 top-6 ">
-              <div className="flex justify-between items-center">
-                <div className="bg-[#F1582B] px-3 py-2 h-9 rounded-full ml-6 text-white cursor-pointer">
-                  Featured
-                </div>
-                <CiHeart
-                  size={30}
-                  className="bg-white text-[#F1582B] mr-6 rounded-full p-1 cursor-pointer hover:bg-[#F1582B] hover:text-white"
-                />
-              </div>
-            </div>
-          </div>
-          {/* text part */}
-          <div className="px-6 pb-6">
-            <div className="flex justify-between py-2 text-[11px] font-semibold">
-              <p className="flex gap-2">
-                <img src={i7} className="w-[13px] h-[13px] mt-[2px]" alt="" />
-                10 Hours
-              </p>
-              <p className="flex gap-2">
-                <img src={i8} className="w-[11px] h-[11px] mt-[2px]" alt="" />
-                1-6 Guest
-              </p>
-            </div>
-            <p className="font-semibold text-xl ">
-              Private Mountain Fuji Sightseeing Tour
-            </p>
-            <p className="pl-4 py-2">Shensekai</p>
+            <p className="pl-4 py-2">Osaka Castle</p>
             <p className="text-[11px]">
               From &nbsp;&nbsp;<span className="font-extrabold">$300 </span>
               <span className="text-[#FF0303] font-semibold">$500</span>
@@ -567,6 +492,10 @@ const Popup = () => {
         className="w-4/5 "
         slidesPerView={4} // Number of slides visible at once
         pagination={{ clickable: true }} // Enable pagination (dots)
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <div className="bg-[#D8F4DA] w-[95%] px-3 py-5 rounded-2xl mb-30 mx-auto shadow-md">
@@ -577,10 +506,10 @@ const Popup = () => {
               <Star />
             </div>
             <p className="text-[11px] mt-2">
-              A travel agency is a business that facilitates travel arrangements
+              A travel agency is a business that facilitates travel arrangements
               for individuals or groups, acting as an intermediary between
               travelers and various travel suppliers like airlines, hotels, and
-              cruise lines. They offer a range of services, from booking flights
+              cruise lines. They offer a range of services, from booking flights
               and accommodations to creating customized itineraries
             </p>
           </div>

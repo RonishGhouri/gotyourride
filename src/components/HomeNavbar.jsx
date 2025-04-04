@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Got-Your-Ride-Logo-05-1.png";
-import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa6";
 import { IoCaretDownSharp } from "react-icons/io5";
 import SocialIcons from "./SocialIcons";
 import image from "../assets/phone.png";
+import { GrLocation } from "react-icons/gr";
 
 const HomeNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -70,13 +70,40 @@ const HomeNavbar = () => {
               DESTINATIONS <IoCaretDownSharp size={20} />
             </h1>
             <div className="group-hover:block hidden absolute pt-2">
-              <div className="flex flex-col gap-2 w-50 py-3 px-5 bg-slate-100 text-gray-500 rounded">
-                <p className="cursor-pointer hover:text-black">City Tokyo</p>
-                <p className="cursor-pointer hover:text-black">
+              <div className="flex flex-col gap-2 w-57 py-3 px-5 bg-white shadow-md text-gray-500 rounded">
+                <NavLink
+                  to="/booking"
+                  className="cursor-pointer hover:text-[#f1582b] flex gap-2"
+                >
+                  <GrLocation className="text-2xl text-[#f1582b]" />
+                  City Tokyo
+                </NavLink>
+                <hr className="opacity-20" />
+                <NavLink
+                  to="/booking"
+                  className="cursor-pointer hover:text-[#f1582b] flex gap-2"
+                >
+                  <GrLocation className="text-2xl text-[#f1582b]" />
                   Mt. Fuji 5th Station
-                </p>
-                <p className="cursor-pointer hover:text-black">Hakone tour</p>
-                <p className="cursor-pointer hover:text-black">Osaka Castle</p>
+                </NavLink>
+                <hr className="opacity-20" />
+
+                <NavLink
+                  to="/booking"
+                  className="cursor-pointer hover:text-[#f1582b] flex gap-2"
+                >
+                  <GrLocation className="text-2xl text-[#f1582b]" />
+                  Hakone tour
+                </NavLink>
+                <hr className="opacity-20" />
+
+                <NavLink
+                  to="/booking"
+                  className="cursor-pointer hover:text-[#f1582b] flex gap-2"
+                >
+                  <GrLocation className="text-2xl text-[#f1582b]" />
+                  Osaka Castle
+                </NavLink>
               </div>
             </div>
           </NavLink>

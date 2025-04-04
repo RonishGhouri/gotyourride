@@ -9,7 +9,7 @@ import i4 from "../assets/expert-01-1.png";
 import i5 from "../assets/fuji-mountain-image-1.png";
 
 const HighIndexComponent = () => {
-  const [currentComponent, setCurrentComponent] = useState(0);
+  const [currentComponent, setCurrentComponent] = useState(1);
   const handleCurrentComponent = (pointer) => {
     setCurrentComponent(pointer);
   };

@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
           {/* contact form */}
           <div className="border-2 border-black/20 py-10 px-17 w-3/5 rounded-2xl">
-            <h1 className="font-bold">Fill Up The Form</h1>
+            <h1 className="font-bold ml-[6px]">Fill Up The Form</h1>
             <p className=" ml-[6px]">
               enter your Details to send you confirmation and updates about your
               booking
